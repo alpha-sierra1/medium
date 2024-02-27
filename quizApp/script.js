@@ -70,3 +70,21 @@ function sum(x, y) {
 
 const sum3 = sum(9, 3);
 console.log(sum3);
+
+// fetch("https://jsonplaceholder.typicode.com/users").then((response) =>
+//   response
+//     .json()
+//     .then((data) => {
+//       console.log("Users:", users);
+//     })
+//     .catch((error) => {console.error("Error:", error))
+
+//   });
+fetch('"https://jsonplaceholder.typicode.com/users')
+  .then((response) => response.json())
+  .then((data) => {
+    console.log("Users:", users);
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
