@@ -5,19 +5,25 @@
 //   emptyBox.textContent = "this is me";
 // });
 
-const buttoon = document.getElementById("btn");
-const emptyBox = document.getElementById("emptyBox");
-let isVisible = true;
+// const buttoon = document.getElementById("btn");
+// const emptyBox = document.getElementById("emptyBox");
+// let isVisible = true;
 
-buttoon.addEventListener("click", function () {
-  if (isVisible) {
-    emptyBox.textContent = "";
-  } else {
-    emptyBox.textContent = "This is me";
-  }
-  isVisible = !isVisible;
-});
+// buttoon.addEventListener("click", function () {
+//   if (isVisible) {
+//     emptyBox.textContent = "";
+//   } else {
+//     emptyBox.textContent = "This is me";
+//   }
+//   isVisible = !isVisible;
+// });
 
+const obj = {
+  book: "Inconginto",
+  author: "David Eagleman",
+  published: 1998,
+};
+console.log("obj");
 //
 
 // btn.addEventListener("click", function () {
@@ -57,3 +63,10 @@ const fruitArray = [
 for (let i = 0; i < fruitArray.length; i++) {
   console.log(fruitArray[i]);
 }
+
+function sum(x, y) {
+  return x + y;
+}
+
+const sum3 = sum(9, 3);
+console.log(sum3);
