@@ -80,10 +80,10 @@ console.log(sum3);
 //     .catch((error) => {console.error("Error:", error))
 
 //   });
-fetch('"https://jsonplaceholder.typicode.com/users')
+fetch("https://jsonplaceholder.typicode.com/users")
   .then((response) => response.json())
   .then((data) => {
-    console.log("Users:", users);
+    console.log("Data:", data);
   })
   .catch((error) => {
     console.error("Error:", error);
