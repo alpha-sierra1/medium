@@ -18,6 +18,8 @@
 //   isVisible = !isVisible;
 // });
 
+const data1 = document.getElementById("data");
+
 const obj = {
   book: "Inconginto",
   author: "David Eagleman",
@@ -83,7 +85,8 @@ console.log(sum3);
 fetch("https://jsonplaceholder.typicode.com/users")
   .then((response) => response.json())
   .then((data) => {
-    console.log("Data:", data);
+    const userNames = data.map((user) => user.name);
+    console.log("User Names:", userNames);
   })
   .catch((error) => {
     console.error("Error:", error);
