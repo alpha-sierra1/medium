@@ -18,7 +18,7 @@
 //   isVisible = !isVisible;
 // });
 
-const data1 = document.getElementById("data");
+const data1 = document.getElementById("data2");
 
 const obj = {
   book: "Inconginto",
@@ -86,7 +86,9 @@ fetch("https://jsonplaceholder.typicode.com/users")
   .then((response) => response.json())
   .then((data) => {
     const userNames = data.map((user) => user.name);
-    console.log("User Names:", userNames);
+    data1.push(userNames);
+
+    // console.log("User Names:", userNames);
   })
   .catch((error) => {
     console.error("Error:", error);
