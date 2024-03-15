@@ -18,7 +18,7 @@
 //   isVisible = !isVisible;
 // });
 
-const data1 = document.getElementById("data2");
+// const data1 = document.getElementById("data2");
 
 const obj = {
   book: "Inconginto",
@@ -93,3 +93,10 @@ fetch("https://jsonplaceholder.typicode.com/users")
   .catch((error) => {
     console.error("Error:", error);
   });
+
+array1 = [3, 4, 4, [2, 4, 6, 9]];
+console.log(array1.flat());
+
+function flattenArray(x) {
+  x.flat();
+}
